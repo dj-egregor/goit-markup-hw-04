@@ -22,6 +22,13 @@
     --footer-background-color: #2f303a;
     --footer-address-text-color: #ffffff;
     --footer-contacts-link-color: rgba(255, 255, 255, 0.6);
+    --border-regular-customers-icons: #afb1b8;
+    --soc-links-background-hover: #2196f3;
+    --default-color-soc-lincs-icons: #afb1b8;
+    --default-color-clients-icons: #afb1b8;
+    --customers-hover-fill-color: #2196f3;
+    --icons-social-color-hover: #ffffff;
+    --soc-links-footer-background-hover: #2196f3;
 }
 
 p,
@@ -113,11 +120,12 @@ body {
 
 .main-nav-item {
     margin-left: 50px;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    /* padding-top: 32px;
+    padding-bottom: 32px; */
 }
 
 .main-nav-link {
+    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
     text-decoration: none;
@@ -143,7 +151,29 @@ body {
     color: var(--links-text-color-hover);
 }
 
+.hdr-cont-icon {
+    fill: currentColor;
+}
+
+.envelope-container {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
 /*--------------------------------------- Header */
+.header-contacts.header-contacts-icons-link {
+    display: flex;
+    align-items: center;
+    /* padding: 0; */
+}
+
+.hdr-cont-text {
+    margin-left: 10px;
+}
+
 .header-contacts {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -261,7 +291,10 @@ body {
     height: auto;
 }
 
-.speciality-header {
+/* ----------------------H2 headers-------------------------- */
+.speciality-header,
+.regular-customers-header,
+.team-header {
     text-align: center;
     font-weight: 700;
     font-size: 36px;
@@ -270,6 +303,8 @@ body {
     color: var(--headings-text-color-default);
     margin-bottom: 50px;
 }
+
+/* ---------------------------------------------------------- */
 
 .speciality {
     padding-top: 0;
@@ -286,16 +321,6 @@ body {
     gap: 30px;
 }
 
-.team-header {
-    margin-bottom: 50px;
-    text-align: center;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    color: var(--headings-text-color-default);
-}
-
 .team-card {
     background-color: var(--team-card-background-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -304,7 +329,7 @@ body {
 
 .team-card-text-container {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 16px;
 }
 
 .full-name {
@@ -318,12 +343,63 @@ body {
 }
 
 .team-card-text {
-    /* padding-bottom: 30px; */
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--text-p-color-default);
+}
+
+.social-links-container {
+}
+
+.soc-link-list {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 30px;
+    padding-left: 0px;
+    justify-content: center;
+}
+
+.soc-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    fill: var(--default-color-soc-lincs-icons);
+}
+
+.soc-link:hover {
+    background-color: var(--soc-links-background-hover);
+    fill: var(--icons-social-color-hover);
+}
+
+/* -------------------Regular-customers------------------------ */
+
+.regular-customers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.list-regular-customers {
+    display: flex;
+    gap: 30px;
+}
+
+.client-link {
+    display: block;
+    padding: 16px 31px;
+    border: 1px solid var(--border-regular-customers-icons);
+    border-radius: 4px;
+    fill: var(--default-color-clients-icons);
+}
+
+.client-link:hover {
+    /* background-color: var(--soc-links-background-hover); */
+    border: 1px solid var(--customers-hover-fill-color);
+    fill: var(--customers-hover-fill-color);
 }
 
 /* -------------------Footer---------------------- */
@@ -364,6 +440,56 @@ footer {
 
 .weblogo-footer {
     color: var(--weblogo-footer-color);
+}
+
+.join {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--footer-address-text-color);
+}
+
+.footer-flex {
+    display: flex;
+}
+
+.footer-social-links-container {
+    margin-left: 70px;
+    padding-top: 12px;
+}
+
+.soc-link-list-footer {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 30px;
+    padding-left: 0px;
+    justify-content: center;
+}
+
+.soc-link-list {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 30px;
+    padding-left: 0px;
+    justify-content: center;
+}
+
+.soc-link-footer {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    fill: var(--icons-social-color-hover);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.soc-link-footer:hover {
+    background-color: var(--soc-links-footer-background-hover);
+    /* fill: var(--icons-social-color-hover); */
 }
 
 /* -------------------Portfolio------------------- */
@@ -454,4 +580,8 @@ footer {
     border-left: 1px solid var(--border-item-list-color);
     border-right: 1px solid var(--border-item-list-color);
     border-bottom: 1px solid var(--border-item-list-color);
+}
+
+.portfolio-item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
