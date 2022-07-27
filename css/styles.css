@@ -17,6 +17,7 @@
     --main-title-text-color: #fff;
     --hero-background-color: #2f303a;
     --team-section-background-color: #f5f4fa;
+    --benefits-icons-background-color: #f5f4fa;
     --team-card-background-color: #ffffff;
     --footer-background-color: #2f303a;
     --footer-address-text-color: #ffffff;
@@ -175,8 +176,10 @@ body {
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    /* margin: 0px auto; */
     background-color: var(--hero-background-color);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .order {
@@ -221,6 +224,20 @@ body {
 .benefits-list {
     width: 270px;
 }
+
+.conntainer-benefits-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding: 25px 100px;
+    background-color: var(--benefits-icons-background-color);
+    border-radius: 4px;
+}
+
+/* .icons-benefits {
+    width: 70px;
+    height: 70px;
+} */
 
 .benefits-text {
     font-size: 14px;
