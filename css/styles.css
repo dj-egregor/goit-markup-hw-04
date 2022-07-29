@@ -354,7 +354,6 @@ body {
 .soc-link-list {
     display: flex;
     gap: 10px;
-    /* padding-bottom: 30px; */
     padding-left: 0px;
     justify-content: center;
 }
@@ -451,6 +450,7 @@ footer {
 }
 
 .join {
+    margin-bottom: 20px;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
@@ -461,17 +461,18 @@ footer {
 
 .footer-flex {
     display: flex;
+    align-items: baseline;
 }
 
 .footer-social-links-container {
     margin-left: 70px;
-    padding-top: 12px;
+    /*padding-top: 12px; */
 }
 
 .soc-link-list-footer {
     display: flex;
     gap: 10px;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
     padding-left: 0px;
     justify-content: center;
 }
@@ -557,6 +558,7 @@ footer {
 
 .portfolio-link {
     display: block;
+    text-decoration: none;
 }
 
 .filter {
