@@ -264,7 +264,6 @@ body {
     align-items: center;
     margin-bottom: 30px;
     height: 120px;
-    /* padding: 25px 100px; */
     background-color: var(--benefits-icons-background-color);
     border-radius: 4px;
 }
@@ -466,7 +465,6 @@ footer {
 
 .footer-social-links-container {
     margin-left: 70px;
-    /*padding-top: 12px; */
 }
 
 .soc-link-list-footer {
